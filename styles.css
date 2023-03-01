@@ -221,47 +221,58 @@ hr.solid
   border-color: rgb(42,42,42);
  }
  
+ .mySlides {
+	 display:none;
+}
+.cascadingImagesContainer .w3-content .w3-button{
+	background-color: white;
+	display: block;
+}
+/*	.w3-btn,.w3-button{border:none;
+	display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;
+	background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}*/
+ 
 /*  ******************************* 0 <499px screen **********************/
- @media (min-width: 500px) and (max-width: 500px) {
+ @media (min-width: 0px) and (max-width: 500px) {
  
 /* --------------------------------- Top Nvaigation Bar ----------------------*/
 .topnav {
 	margin: 0 0 0 0 ; 
 	width: 100%;
-	height: 14vh;
+	height: 9vh;
 	left: 0%;
-	padding: 1% 0 3% 0; 
+	padding: 1% 0 3% 0; /* top, right, bottom, left */
 }
 .topnav title {
-  font-size: 2vw;
-  margin: 0% 0 2% 0;
+  font-size: 4vw;
+  margin: 0% 0 0% 0;
   padding: 0 0 0 10%; 
 }
 
 .topnav a {
-  font-size: 12px;
+  font-size: 2vw;
   left: 7%;
-  top: 2%;
+  top: 0%;
   padding: 0 1% 0% 1% ;
 }
 .socialNavBar {
-   padding: 2% 0 0 0;  
+   padding: 0% 0 0 0;  
 } 
 
 .socialNavBar > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
+  font-size:3vw;
+  width:4vw;
+  height:4vh;
+  line-height:4vh;
   border-radius:50%; 
-  margin:0 8px 2% 0;
+  margin:0 2% 10% 0;
 }
 
 /* -----------------------------------Images--------------------*/
 .logo
 {
-	width: 10%;
-	height: 8%;
+	width: 18%;
+	height: 10%;
 	left: 1%;
 	top: 0.1%;
 }
@@ -288,16 +299,16 @@ hr.solid
 }
 
 .footerClass .social > a {
-  font-size:24px;
-  width:40px;
-  height:40px;
-  line-height:40px;
+  font-size:4vw;
+  width:4vw;
+  height:4vh;
+  line-height:4vh;
   margin:0 8px;
 }
 
 .footerClass ul { /* whole unordered list */
-  padding: 0% 0 0 15%;  /* top, right, bottom, left */
-  font-size:16px;
+  padding: 0% 0 0 5%;  /* top, right, bottom, left */
+  font-size:3vw;
   line-height:1.6;
   margin-bottom:0;
 }
@@ -307,8 +318,8 @@ hr.solid
 }
 
 .footerClass .copyright {
-  padding: 5% 0 0 38%; /* top, right, bottom, left */
-  font-size:25px;
+  padding: 8% 0 0 35%; /* top, right, bottom, left */
+  font-size:4vw;
 }
 }
  

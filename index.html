@@ -4,15 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, inital-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<!-- Add icon library -->
+<!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Tourney:wght@500&display=swap" rel="stylesheet">
+<!-- SlideShow -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <title> Striking Clinic Banbury </title>
 <style>
+
 </style>
 </head>
 <header>
@@ -25,7 +28,6 @@
 	 <a href="membership.html">Membership</a>
 	 <a href="classes.asp">Classes</a>
 	 <a href="about.asp">About Us</a>
-	 <a href="whatsnew.asp">What's new</a>
 	 <div class="socialNavBar">
   <a href="https://www.facebook.com/thestrikingclinic/"><i class="fa fa-facebook" style="color:rgb(22,22,22)"></a></i></a>
   <a href="https://www.instagram.com/striking_clinic/?igshid=18qour0xn6s1k"><i class="fa fa-instagram" style="color:rgb(22,22,22)"></i></a>
@@ -33,11 +35,37 @@
 </nav>
 </header>
 <body>
+		
 	<div class="cascadingImagesContainer">
-		<img src ="images/img_squad.jpg" alt="Striking Clinic team picture">
+	<div class="w3-content w3-display-container">
+		<img class="mySlides" src ="images/img_squad.jpg" alt="Striking Clinic team picture">
+		<img class="mySlides" src ="images/img_emptyGym.jpg" alt="Striking Clinic gym">
+		<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+		</div>
 		<img src ="images/img_timetable.jpeg" alt="Striking Clinic timetable">
+		
 	</div>
 	<img class="logo" src ="images/img_logo.PNG" alt="Striking Clinic Logo">
+	<script>
+	var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 </body>
 <footer>
  <div class="footerClass">
@@ -51,7 +79,7 @@
                 <li class="list-inline-item"> <a href="membership.html">Membership</a></li>
                 <li class="list-inline-item"><a href="classes.asp">Classes</a></li>
                 <li class="list-inline-item"><a href="about.asp">About Us</a></li>
-				<li class="list-inline-item"><a href="whatsnew.asp">What's new</a></li>
+				</a></li>
             </ul>
             <p class="copyright">Striking Clinic</p>
 </div>
