@@ -67,10 +67,11 @@ footer {
   line-height: 1vw;	
 }
 .socialNavBar {
-  margin: 0 2vw;
+ 
   position:relative;
   text-align: center;
-  left: 15vw;
+  margin: 0 0 0 30vw;
+ 
  
   
 }
@@ -105,7 +106,7 @@ color: rgb(65,165,41);
      flex-direction: column; /*This property is used to align the items of the class on which it is applied in a vertical way. */
      align-items: center; /*This property is used to display the items in the center of the screen. */
 	 width:100%;
-	 min-height: 95vh;
+	 min-height: 97vh;
 	
 }
 .cascadingImagesContainer img
@@ -150,7 +151,7 @@ color: rgb(65,165,41);
 }
 
 .footerClass .social {
-   padding: 2% 0 0 0; 
+   padding: 4vw 0 0 0; 
 }
 .fa-instagram {
 color: rgb(65,165,41); 
@@ -209,8 +210,8 @@ color: rgb(65,165,41);
 	
 	text-align: center;
 	position: relative;
-	margin: 0 auto; /* auto center*/
-	min-height: 95vh;
+	margin: 5vw auto; /* auto center*/
+	min-height: 91vh;
 
 }
 h1
