@@ -3,6 +3,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, inital-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" type="text/css" href="styles.css">
 <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,6 +19,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Tourney:wght@500&display=swap" rel="stylesheet">
 <!-- SlideShow -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ 
 <title> Striking Clinic Banbury </title>
 <style>
 
@@ -37,10 +44,12 @@
 		</nav>
 </header>
 <body>
-		
-	<div class="membershipOptionsTxtParent">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0" nonce="Ogli7n7M"></script>
+<div class="membershipOptionsTxtParent">
 <!-- Span and div are both generic HTML elements that group together related parts of a web page. However, they serve different functions. A div element is used for block-level organization and styling of page elements, whereas a span element is used for inline organization and styling.-->
 	<span class="membershipOptionsTxt">
+	<img class="chrisCoachImg" src="images/chrisCoach2.PNG" alt="Chris Coach">
 	<h2>The Striking Clinic</h2>
 	<p>The Striking Clinic was established in 2015 by Head Coach Chris Mee. Our striking system is a combination of styles, The highly effective striking of Muay Thai mixed with the more intricate footwork of Kickboxing & Western Boxing.</p>
 	<hr class="solid">
@@ -58,21 +67,54 @@
 	
 	<div class="formContainer">
 	<form action="form.php" method="POST">
-    <label for="fname">Name</label>
-    <input type="text" id="name" name="name" placeholder="Name">
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Email*">
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
+    <input type="text" name="name" placeholder="Name">
+    <input type="text" name="email" placeholder="Email*">
+    <textarea name="message" placeholder="Message" style="height:200px"></textarea>
     <input type="submit" value="Send Message">
 
-  </form>
+	</form>
+	</div>
+	<h2>Where to find us </h2>
+	<hr class="solid">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.296108514219!2d-1.3299203873446874!3d52.056131771826344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877264c997d7ebd%3A0xfd2af0db2060e9aa!2sStriking%20Clinic%20Banbury!5e0!3m2!1sen!2suk!4v1686046899155!5m2!1sen!2suk" width="90%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+	<h2>Reviews </h2>
+	<hr class="solid">
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+		
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flouis.howitt%2Fposts%2Fpfbid032fA9BX7jmyEdab1qmDdsoQZ2QjqUg1YC82vnQSagUaUkiRrQbeCkaCTRTZ3uq8Chl&show_text=true&width=500" width="250" height="275" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Flaurel.carron%2Fposts%2Fpfbid0hQV9UTrLdPQoVPaMGicq36FL27Ku8tZ3WfheENXVpZskaQ1hB8YVP7t3v7Azs4NJl&show_text=true&width=500" width="250" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+
+        </div>
+        <div class="carousel-item">
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fsophie.parker.7923%2Fposts%2Fpfbid0cb8JG3Eqrxq6NmZtbYsw6sYFo3tSwzhec9SQeu8DLYei9zo9FCyrpm6vgS1TgrWzl&show_text=true&width=500" width="250" height="250" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+		<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdillon.cahoon.1%2Fposts%2Fpfbid0UwQUVN7S4FTcNUf3ozqvQGYV9dSKmoioHLLxJSAF9xcUfVLS8K2gE5RjQNVC7VgDl&show_text=true&width=500" width="250" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+        <div class="carousel-item">
+		 <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FChunkit.5070%2Fposts%2Fpfbid02hmtb2xt1A3fDeHoXKRwmvyjaXtyDhJiYPqDfQ3zxUKxkzQQeNAfJJ5NnwSaFLCQLl&show_text=true&width=500" width="250" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+	<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fchloe.pepworth2%2Fposts%2Fpfbid05sFiRJz2aqEQCRicU9YWnLDu9ZJUWs3juMp3PKrKRiYHGWV7FHj5nKkCn1dXpBFwl&show_text=true&width=500" width="250" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
 	
+	<hr class="solid">
 	</span>
-</div>
-	<script>
-</script>
+	</div>
 </body>
 <footer>
  <div class="footerClass">

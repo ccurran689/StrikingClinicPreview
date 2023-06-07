@@ -134,6 +134,21 @@ color: rgb(65,165,41);
 		left: 0%;
 	
 }
+
+.chrisCoachImg 
+{
+	margin: 0 0 0 0;/* top, right, bottom, left */
+	max-width: 40vw;
+	max-height: 40vh;
+}
+
+.classesImg
+{
+		margin: 0 0 0 0;/* top, right, bottom, left */
+	max-width: 85vw;
+	max-height: 40vh;
+}
+
 /* -------------------------------Footer ------------------------------------*/
 .footerClass .social > a:hover {
   opacity:0.9;
@@ -151,7 +166,7 @@ color: rgb(65,165,41);
 }
 
 .footerClass .social {
-   padding: 4vw 0 0 0; 
+   padding: 4vw 0 4vm 0; 
 }
 .fa-instagram {
 color: rgb(65,165,41); 
@@ -180,6 +195,7 @@ color: rgb(65,165,41);
   display: inline-block;
   font-size:3vw;
   font-family: 'Merriweather', serif;
+  margin: 2vh
 }
 
 .footerClass li { /* each list item*/
@@ -210,7 +226,7 @@ color: rgb(65,165,41);
 	
 	text-align: center;
 	position: relative;
-	margin: 10vw auto; /* auto center*/
+	margin: 5vw auto; /* auto center*/
 	min-height: 91vh;
 
 }
@@ -325,3 +341,13 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 
+/************************************ABOUT *****************************************/
+.reviews
+{
+	display: flex;
+	justify-content: center;
+    text-align: center;
+	width: 20vw;
+	height: 60vh;
+	 margin: 0vh 1vw 0 1vw /* top, right, bottom, left */
+}
